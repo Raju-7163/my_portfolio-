@@ -85,7 +85,7 @@ header{
     .nav-links.active{
         display:flex;
     }
-    .resume-btn{
+    .btn_download{
         display:none;
     }
 }
@@ -347,4 +347,163 @@ header{
 }
 .contact-container button:hover{
     background:#2563eb;
+}
+
+/* ==========================================
+        MOBILE RESPONSIVE DESIGN
+========================================== */
+
+@media screen and (max-width:768px){
+
+    /* Navbar */
+
+    .navbar{
+        padding:0 15px;
+    }
+
+    .logo a{
+        font-size:22px;
+    }
+
+    .btn_download{
+        padding:8px 15px;
+        font-size:14px;
+    }
+
+    /* Hero */
+
+    .hero{
+        flex-direction:column-reverse;
+        justify-content:center;
+        text-align:center;
+        padding:120px 20px 60px;
+        gap:35px;
+    }
+
+    .hero-content{
+        width:100%;
+    }
+
+    .hero-content h1{
+        font-size:38px;
+    }
+
+    .hero-content h2{
+        font-size:28px;
+        margin:15px 0;
+    }
+
+    .hero-content h3{
+        font-size:22px;
+    }
+
+    .hero-content p{
+        max-width:100%;
+        width:100%;
+        font-size:17px;
+        line-height:1.8;
+        text-align:center;
+    }
+
+    .hero-image img{
+        width:240px;
+        height:240px;
+    }
+
+    .social-icons{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .btn_container{
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:15px;
+    }
+
+    /* Sections */
+
+    .about,
+    .skills,
+    .projects,
+    .contact{
+        padding:60px 20px;
+    }
+
+    /* Paragraphs */
+
+    .about-text,
+    .skills-text,
+    .projects-text,
+    .contact-text{
+        max-width:100%;
+        width:100%;
+        font-size:17px;
+        line-height:1.8;
+        padding:0 5px;
+    }
+
+    /* About Cards */
+
+    .about-container{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    /* Skills */
+
+    .skills-container{
+        grid-template-columns:repeat(2,1fr);
+        gap:15px;
+    }
+
+    .skill-card{
+        margin:0;
+        padding:20px 10px;
+    }
+
+    .skill-card h3{
+        font-size:20px;
+    }
+
+    .skill-card i{
+        font-size:45px;
+    }
+
+    /* Projects */
+
+    .projects-container{
+        grid-template-columns:1fr;
+    }
+
+    /* Contact */
+
+    .contact-container{
+        width:100%;
+        max-width:100%;
+        padding:20px;
+    }
+
+    .contact-container input,
+    .contact-container textarea{
+        width:100%;
+        font-size:16px;
+    }
+
+    .contact-container button{
+        width:100%;
+    }
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+    font-size:42px;
+    line-height:1.2;
+}
+
+.hero-content h2{
+    font-size:30px;
+}
+
 }
