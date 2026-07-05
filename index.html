@@ -181,14 +181,21 @@
         <section id="contact" class="contact">
             <h2>Contact Me</h2>
             <p class="contact-text">
-                If you would like to get in touch with me reach out to me via email or social media.
+                If you would like to get in touch with me please fill out this form or reach out to me via email or social media.
             </p>
-            <p>---------------------------------------------</p>
-            <p> 2026 Raju Arasavalli</p>
+            <div class="contact-container">
+                <form action="mailto:rajuarasavalli01@gmail.com" method="post" enctype="text/plain">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+        <p> 2026 Raju Arasavalli</p>
             <p><i class="fas fa-phone"></i> +91 9701294183</p>
             <p><i class="fas fa-envelope"></i> rajuarasavalli01@gmail.com</p>
             <p><i class="fas fa-map-marker-alt"></i> gujarat, India</p>
-        </section>
         <script src="portfolio.js"></script>
     </body>
 </html>

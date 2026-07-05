@@ -304,3 +304,47 @@ header{
     padding:0 10px;
     margin-bottom:10px;
 }
+.contact{
+    min-height: 100vh;
+    padding:30px 80px;
+}
+.contact-text{
+    max-width:700px;
+    margin: 20px auto 50px;
+    text-align:center;
+    color:#cbd5e1;
+    line-height:1.5;
+}
+.contact-container{
+    max-width:600px;
+    margin:auto ;
+    background:#1e293b;
+    padding:20px;
+    border-radius:10px;
+}
+.contact-container form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+.contact-container input,
+.contact-container textarea{
+    padding:10px;
+    border-radius:5px;
+    border:none;
+    outline:none;
+    font-size:16px;
+}
+.contact-container button{
+    padding:10px;
+    border:none;
+    border-radius:5px;
+    background:#3b82f6;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+.contact-container button:hover{
+    background:#2563eb;
+}
